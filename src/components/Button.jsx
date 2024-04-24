@@ -1,3 +1,5 @@
+import "../stylesheets/Button.css";
+
 function Button({ text, counterClick, manageClick }) {
 	return (
 		<button

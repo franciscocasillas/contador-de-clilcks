@@ -3,6 +3,14 @@ import Button from "./components/Button";
 import alienScoutsLogo from "./images/aline-scouts.png";
 
 function App() {
+	const manageClick = () => {
+		console.log("click");
+	};
+
+	const restartCounter = () => {
+		console.log("restart");
+	};
+
 	return (
 		<div className="App">
 			<div className="alien-scouts-logo-container">
@@ -13,14 +21,8 @@ function App() {
 				/>
 			</div>
 			<div className="mainContainer">
-				<Button 
-          text="Click" 
-          className={true}
-          manageClick={} />
-				<Button 
-          text='Restart'
-          className={false}
-          manageClick={} />
+				<Button text="Click" className={true} manageClick={manageClick} />
+				<Button text="Restart" className={false} manageClick={restartCounter} />
 			</div>
 		</div>
 	);
