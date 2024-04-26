@@ -21,8 +21,12 @@ function App() {
 				/>
 			</div>
 			<div className="mainContainer">
-				<Button text="Click" className={true} manageClick={manageClick} />
-				<Button text="Restart" className={false} manageClick={restartCounter} />
+				<Button text="Click" counterClick={true} manageClick={manageClick} />
+				<Button
+					text="Restart"
+					counterClick={false}
+					manageClick={restartCounter}
+				/>
 			</div>
 		</div>
 	);
