@@ -1,14 +1,18 @@
 import "./App.css";
 import Button from "./components/Button";
 import alienScoutsLogo from "./images/aline-scouts.png";
+import Contador from "./components/Contador";
+import { useState } from "react";
 
 function App() {
+	const [numeroDeClicks, setNumeroDeClicks] = useState(0);
+
 	const manageClick = () => {
-		console.log("click");
+		setNumeroDeClicks(numeroDeClicks + 1);
 	};
 
 	const restartCounter = () => {
-		console.log("restart");
+		setNumeroDeClicks(0);
 	};
 
 	return (
@@ -21,6 +25,7 @@ function App() {
 				/>
 			</div>
 			<div className="mainContainer">
+				<Contador numeroDeClicks={numeroDeClicks} />
 				<Button text="Click" counterClick={true} manageClick={manageClick} />
 				<Button
 					text="Restart"

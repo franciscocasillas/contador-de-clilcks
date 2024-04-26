@@ -1,0 +1,21 @@
+.contador {
+	min-width: 260px;
+	height: 260px;
+	font-size: 120px;
+	padding: 25px;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid black;
+	margin-bottom: 15px;
+}
+
+.mainContainer {
+	display: flex;
+	flex-direction: column;
+	min-width: 600px;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
